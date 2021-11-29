@@ -1,6 +1,6 @@
 name: Functional bug
 description: File a bug report
-title: "[Bug]: "
+title: "[Functional Bug]: "
 labels: ["bug"]
 assignees:
   - cnoss
@@ -14,7 +14,7 @@ body:
     attributes:
       label: URL of the buggy page?
       description: At what URL does the bug happens?
-      placeholder: ex.
+      placeholder: ex. https://lucascranach.org/en/paintings/AT_KHM_GG6905
     validations:
       required: true
   - type: input
@@ -58,5 +58,5 @@ body:
   - type: textarea
     id: additional-content
     attributes:
-      label: Additional context
-      description: Add any other context about the problem here.
+      label: Additional context & Screenshots
+      description: Add any other context about the problem here. Please add one or several screenshots. You can drag them easily into the textarea.

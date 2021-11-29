@@ -1,5 +1,5 @@
 name: Functional bug
-description: File a bug report
+description: Report a functional bug.
 title: "[Functional Bug]: "
 labels: ["bug"]
 assignees:

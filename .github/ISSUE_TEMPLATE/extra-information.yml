@@ -28,8 +28,6 @@ body:
     attributes:
       label: Your contribution
       description: What is your suggestion, message or extra information?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
     validations:
       required: true
   

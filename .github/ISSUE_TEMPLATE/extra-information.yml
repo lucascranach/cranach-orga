@@ -1,9 +1,9 @@
-name: Bug Report
+name: Functional bug
 description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
+title: "[Bug] "
+labels: ["bug"]
 assignees:
-  - octocat
+  - cnoss
 body:
   - type: markdown
     attributes:

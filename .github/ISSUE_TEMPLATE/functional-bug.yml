@@ -1,0 +1,62 @@
+name: Functional bug
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug"]
+assignees:
+  - cnoss
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: contact
+    attributes:
+      label: URL of the buggy page?
+      description: At what URL does the bug happens?
+      placeholder: ex. https://lucascranach.org/en/paintings/AT_KHM_GG6905
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+    validations:
+      required: true
+  - type: dropdown
+    id: devices
+    attributes:
+      label: On what kind of device does the bug appear?
+      multiple: true
+      options:
+        - Desktop Computer
+        - Laptop
+        - Tablet
+        - Smartphone
+        - other
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+        - other
+  - type: textarea
+    id: additional-content
+    attributes:
+      label: Additional context
+      description: Add any other context about the problem here.

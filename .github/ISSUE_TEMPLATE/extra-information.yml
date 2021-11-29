@@ -1,0 +1,35 @@
+name: Feedback on object record
+description: I found an content error or have some extra information.
+title: "[IMPROVEMENT] "
+labels: ["Content"]
+assignees:
+  - cnoss
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this report!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: adress
+    attributes:
+      label: What is your name and adress?
+    validations:
+      required: true
+  - type: textarea
+    id: contribution
+    attributes:
+      label: Your contribution
+      description: What is your suggestion, message or extra information?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+  

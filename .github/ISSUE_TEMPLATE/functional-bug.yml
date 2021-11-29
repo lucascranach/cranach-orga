@@ -10,11 +10,11 @@ body:
       value: |
         Thanks for taking the time to fill out this bug report!
   - type: input
-    id: contact
+    id: url
     attributes:
       label: URL of the buggy page?
       description: At what URL does the bug happens?
-      placeholder: ex. https://lucascranach.org/en/paintings/AT_KHM_GG6905
+      placeholder: ex.
     validations:
       required: true
   - type: input

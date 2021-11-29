@@ -1,6 +1,6 @@
 name: Feedback on object record
 description: I found an content error or have some extra information.
-title: "[IMPROVEMENT] "
+title: "[IMPROVEMENT]: "
 labels: ["Content"]
 assignees:
   - cnoss

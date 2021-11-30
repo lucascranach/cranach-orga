@@ -44,6 +44,7 @@ body:
         - Tablet
         - Smartphone
         - other
+        - all
   - type: dropdown
     id: browsers
     attributes:
@@ -55,6 +56,7 @@ body:
         - Safari
         - Microsoft Edge
         - other
+        - all
   - type: textarea
     id: additional-content
     attributes:

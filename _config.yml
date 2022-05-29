@@ -15,7 +15,7 @@ port: 4000
 ## Output
 siteurl:                    ## Optional 
 baseurl:                    ## Optional 
-destination: _docs          ## Output folder
+destination: docs          ## Output folder
 
 
 title: CDA Orga

@@ -1,0 +1,11 @@
+---
+layout: default
+---
+{% for post in site.posts %}
+<div class="teaser">
+  <h3 class="teaser__title">{{ post.title }}</h3>
+  <h4 class="teaser__subtitle">{{ post.subtitle }}</h4>
+  <p class="teaser__text">{{ post.excerpt | markdownify }}</p>
+  <a class="teaser__link button" href="{{ post.url }}">mehr Infos zu {{ post.title }}</a>
+</div>
+{% endfor %}

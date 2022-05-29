@@ -1,0 +1,12 @@
+.button{
+  background-color: $darken-medium;
+  color: $darken-strong;
+  border-radius: $radius-s;
+  padding: $xs $s;
+  transition: background $tr-fast;
+
+  &:hover{
+    background-color: $accent-dark;
+    color: $lightest;
+  }
+}

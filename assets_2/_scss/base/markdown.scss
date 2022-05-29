@@ -1,0 +1,45 @@
+.markdown{
+  a {
+    &::after {
+      @include external-link;
+    }
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  ol, ul {
+    padding-left: 0;
+    margin-left: 0;
+    list-style: none;
+
+    li {
+      padding-bottom: $half;
+      padding-left: $xs;
+      counter-increment: listCounter;
+
+      p {
+        display: inline;
+      }
+    }
+  }
+
+  ul {
+    li {
+      margin-left: $s;
+      list-style-type: square;
+    }
+
+    &.is-block {
+      li {
+        display: block;
+        margin-left: 0;
+      }
+    }
+  }
+}

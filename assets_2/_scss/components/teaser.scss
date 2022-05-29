@@ -1,0 +1,22 @@
+.teaser{
+  border-bottom: solid $border-stroke-weight-s $darken;
+  padding-bottom: var(--responsive-padding-bottom);
+
+  &__title{
+    margin-top: 0;
+    font-size: $l;
+    font-weight: 400;
+    margin-bottom: $half;
+  }
+
+  &__subtitle{
+    margin-top: 0;
+    font-size: $l;
+    font-weight: 300;
+  }
+
+  .button{
+    display: inline-block;
+    margin-bottom: var(--responsive-padding-bottom);
+  }
+}

@@ -14,7 +14,7 @@ port: 4000
 
 ## Output
 siteurl:                    ## Optional 
-baseurl: cda-orga
+baseurl: /intern
 destination: docs
 
 
@@ -23,8 +23,8 @@ keywords: jekyll, cda
 author: Matthew Elsom
 description: CDA Orgabereich
 language: de
-styles: /assets/css/cda-orga.css
-favicon: /assets/images/favicon.ico
+styles: assets/css/cda-orga.css
+favicon: assets/images/favicon.ico
 
 ## Generates Style Guide Shell Styles
 ## Enable to change the style guide shell stylesheet.

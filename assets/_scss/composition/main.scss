@@ -1,6 +1,6 @@
 body{
   display: flex;
-
+  flex-direction: column;
 }
 
 main{
@@ -12,4 +12,10 @@ main{
   calc(var(--responsive-padding-bottom) *2);
 
   max-width: $column-large;
+}
+
+@media screen and (min-width: $vp-medium) {
+  body{
+    flex-direction: row;
+  }
 }

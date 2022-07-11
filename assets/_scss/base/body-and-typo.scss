@@ -16,14 +16,10 @@ a {
   text-decoration: none;
 }
 
-a[target=_blank] {
+a{
   display: inline-block;
   border-bottom: dotted $border-stroke-weight-s $accent;
   transition: background $tr-fast, padding $tr-fast;
-
-  &::after {
-    @include external-link;
-  }
 
   &:hover {
     padding-right: $quad;
@@ -85,6 +81,8 @@ h2 {
   margin-top: 0;
   font-size: $l;
   font-weight: $fw-regular;
+  margin-bottom: $xxxl;
+  color: $accent-dark;
 }
 
 h3 {

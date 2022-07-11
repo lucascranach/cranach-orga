@@ -14,8 +14,27 @@ main{
   max-width: $column-large;
 }
 
-@media screen and (min-width: $vp-medium) {
+@media screen and (min-width: $vp-large) {
   body{
     flex-direction: row;
+  }
+
+  main{
+    display: grid;
+    grid-template-columns: $column-small 1fr;
+    gap: var(--responsive-gap);
+    max-width: $column-large * 1.5;
+  }
+}
+
+/* News & Post Container
+############################################################################ */
+
+@media screen and (min-width: $vp-large) {
+  .news-container,
+  .post-container{
+    height: 90vh;
+    border-left: $border-stroke-weight solid $darken;
+    padding-left: var(--responsive-padding-right-left);
   }
 }

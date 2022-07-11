@@ -1,6 +1,7 @@
 .teaser{
   border-bottom: solid $border-stroke-weight-s $darken;
-  padding-bottom: var(--responsive-padding-bottom);
+  padding-bottom: var(--responsive-padding-bottom-inner);
+  margin-bottom: var(--responsive-padding-bottom);
 
   &__title{
     margin-top: 0;

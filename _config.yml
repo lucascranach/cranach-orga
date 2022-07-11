@@ -37,4 +37,8 @@ favicon: assets/images/favicon.ico
 ## Disable to prevent pattern styles from being generated.
 sass:
   sass_dir: assets/_scss 
-  style: :compressed      
+  style: compressed
+
+collections:
+  news:
+    output: false

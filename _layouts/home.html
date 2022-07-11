@@ -1,11 +1,28 @@
 ---
 layout: default
 ---
-{% for post in site.posts %}
-<div class="teaser">
-  <h3 class="teaser__title">{{ post.title }}</h3>
-  <h4 class="teaser__subtitle">{{ post.subtitle }}</h4>
-  <p class="teaser__text">{{ post.excerpt | markdownify }}</p>
-  <a class="teaser__link button" href="{{ post.url | absolute_url }}">mehr Infos zu {{ post.title }}</a>
+
+<div class="news-container">
+  {% for news in site.news %}
+  <h2>News & Releases</h2>
+  <div class="teaser">
+    <h3 class="teaser__title">{{ news.title }}</h3>
+    <h4 class="teaser__subtitle">{{ news.subtitle }}</h4>
+    <p class="teaser__text">{{ news.content | markdownify }}</p>
+  </div>
+  {% endfor %}
 </div>
-{% endfor %}
+
+<section class="post-container">
+  <h2>Infos & Dokumentation</h2>
+  {% for post in site.posts %}
+  <div class="teaser">
+    <h3 class="teaser__title">{{ post.title }}</h3>
+    <h4 class="teaser__subtitle">{{ post.subtitle }}</h4>
+    <p class="teaser__text">{{ post.excerpt | markdownify }}</p>
+    <a class="teaser__link button" href="{{ post.url | absolute_url }}">mehr Infos zu {{ post.title }}</a>
+  </div>
+  {% endfor %}
+</section>
+
+

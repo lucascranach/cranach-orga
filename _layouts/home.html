@@ -4,7 +4,7 @@ layout: default
 
 <div class="news-container">
   <h2>News & Releases</h2>
-  {% for news in site.news %}
+  {% for news in site.news reversed %}
   <div class="teaser">
     <h3 class="teaser__title">{{ news.title }}</h3>
     <h4 class="teaser__subtitle">{{ news.subtitle }}</h4>
@@ -15,7 +15,7 @@ layout: default
 
 <section class="post-container">
   <h2>Infos & Dokumentation</h2>
-  {% for post in site.posts %}
+  {% for post in site.posts reversed %}
   <div class="teaser">
     <h3 class="teaser__title">{{ post.title }}</h3>
     <h4 class="teaser__subtitle">{{ post.subtitle }}</h4>

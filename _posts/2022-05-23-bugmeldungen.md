@@ -12,7 +12,7 @@ Hierfür ist ein Google Formular auf jeder Objektseite des cda verlinkt. Die Dat
 
 ### Bugs, Ideen und Wünschen aus dem Team
 
-Diese Bugs werden via [GitHub Issues](https://github.com/lucascranach/cda-orga/issues) verwaltet. Dafür ist ein [GitHub Accout](https://github.com/login) erforderlich.
+Diese Bugs werden via [GitHub Projects](https://github.com/orgs/lucascranach/projects/2) verwaltet. Dafür ist ein [GitHub Accout](https://github.com/login) erforderlich.
 
 Bitte beachtet beim Eintragen folgende Regeln:
 - ein Eintrag pro Bug: bitte packt nicht mehrere Bugs in einen Eintrag, denn die Bugs werden mitunter von verschiedenen Personen bearbeitet und somit auch verschiedenen Personen zugewiesen. Das ist nicht möglich, wenn mehrere Bugs in einem Eintrag gepackt werden.

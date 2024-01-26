@@ -5,13 +5,13 @@
 
   &__title{
     margin-top: 0;
-    font-size: $l;
+    font-size: $xl;
     font-weight: 400;
     margin-bottom: $half;
   }
 
   &__subtitle{
-    margin-top: 0;
+    margin-top: -$xs;
     font-size: $l;
     font-weight: 300;
   }

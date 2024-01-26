@@ -1,6 +1,6 @@
 ---
 layout: simple
-title:  "Automatisches Deployment einterichtet"
+title:  "Automatisches Deployment eingerichtet"
 subtitle: "zumindest für CDA Orga und Artefacts intern"
 ---
 

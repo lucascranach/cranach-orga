@@ -14,7 +14,7 @@ port: 4000
 
 ## Output
 siteurl:                    ## Optional 
-baseurl: /intern
+baseurl: /intern/blog
 destination: docs
 
 

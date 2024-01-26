@@ -62,8 +62,8 @@ $xl: $bfs * 1.4;
 $xxl: $bfs * 1.8;
 $xxxl: $bfs * 2.6;
 
-$half: $m/2;
-$quad: $m/4;
+$half: calc($m / 2);
+$quad: calc($m / 4);
 
 /* Texte */
 $column-large: $m * 50;

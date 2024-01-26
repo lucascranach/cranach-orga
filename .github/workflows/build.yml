@@ -1,0 +1,42 @@
+name: Jekyll build and deploy to cda Server
+
+on:
+  push:
+    branches: ['master']
+  workflow_dispatch:
+    inputs:
+      environment:
+        type: string
+        default: prod
+        required: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: ['19']
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build
+        uses: jerryjvl/jekyll-build-action@v1
+
+      - name: Deploy files via SFTP
+        uses: pressidium/lftp-mirror-action@v1
+        with:
+          # SFTP credentials
+          host: ${{ secrets.SFTP_HOST }}
+          port: ${{ secrets.SFTP_PORT }}
+          user: ${{ secrets.SFTP_USER }}
+          pass: ${{ secrets.SFTP_PASS }}
+          # lftp settings
+          onlyNewer: true
+          settings: 'sftp:auto-confirm=yes'
+          # Mirror command options
+          localDir: './docs/'
+          remoteDir: '/var/www/html/intern/blog/'
+          reverse: true
+          ignoreFile: '.lftp_ignore'
+          options: '--verbose'

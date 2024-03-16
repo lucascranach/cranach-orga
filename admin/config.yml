@@ -1,0 +1,39 @@
+# config.yml
+local_backend: true
+
+backend:
+  name: git-gateway
+  repo: lucascranach/cda-orga
+  branch: master # Branch to update (optional; defaults to master)
+
+media_folder: 'assets/uploads'
+
+collections:
+  - name: 'news'
+    label: 'News & Releases'
+    hint: 'Hier kommen kleine News und Updates rein.'
+    folder: '_news'
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'simple' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Subtitle', name: 'subtitle', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  
+  - name: 'posts'
+    label: 'Infos & Dokumentation'
+    hint: 'Hier kommen ausführlichere Dokus und Infos rein.'
+    folder: '_posts'
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'simple' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Subtitle', name: 'subtitle', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }  
+      - { label: "Date", name: "date", widget: "datetime", default: "", date_format: "DD.MM.YYYY" }

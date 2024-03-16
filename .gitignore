@@ -2,3 +2,5 @@ manual-deploy.sh
 .jekyll-cache/
 docs/
 .idea
+
+node_modules/

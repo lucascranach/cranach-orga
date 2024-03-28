@@ -79,3 +79,16 @@ h3 {
   margin-top: $xl;
 }
 
+/* Code
+---------------------------------------------------------------------------- */
+
+code{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+pre.highlight{
+  background-color: $darken;
+  padding: $s;
+  overflow-x: scroll;
+  border-radius: 2px;
+}

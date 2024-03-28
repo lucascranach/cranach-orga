@@ -5,13 +5,14 @@ body{
 
 main{
   flex-grow: 1;
+
   padding:
   calc(var(--responsive-padding-top) *2)
   calc(var(--responsive-padding-right-left) *2)
   calc(var(--responsive-padding-right-left) *2)
   calc(var(--responsive-padding-bottom) *2);
 
-  max-width: $column-large;
+  max-width: $column-xlarge;
 }
 
 @media screen and (min-width: $vp-large) {
@@ -21,9 +22,9 @@ main{
 
   main{
     display: grid;
-    grid-template-columns: $column-small 1fr;
+    grid-template-columns: $column-medium 1fr;
     gap: var(--responsive-gap);
-    max-width: $column-large * 1.5;
+    max-width: $column-large * 2;
   }
 }
 
@@ -34,7 +35,9 @@ main{
   .news-container,
   .post-container{
     height: 90vh;
+    overflow: auto;
     border-left: $border-stroke-weight solid $darken;
     padding-left: var(--responsive-padding-right-left);
+    padding-right: 5em;
   }
 }

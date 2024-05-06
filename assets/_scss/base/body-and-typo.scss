@@ -71,6 +71,10 @@ h2 {
   font-weight: $fw-regular;
   margin-bottom: $xxxl;
   color: $accent-dark;
+
+  &:nth-child(n+2) {
+    padding-top: $xl;
+  }
 }
 
 h3 {
@@ -78,6 +82,9 @@ h3 {
   font-weight: $fw-bold;
   margin-top: $xl;
 }
+
+
+
 
 /* Code
 ---------------------------------------------------------------------------- */

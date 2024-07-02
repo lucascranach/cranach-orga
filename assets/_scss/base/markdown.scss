@@ -29,6 +29,10 @@
     }
   }
 
+  ol {
+    list-style: decimal;
+  }
+
   ul {
     li {
       margin-left: $s;

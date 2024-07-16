@@ -1,3 +1,9 @@
+---
+layout: simple
+title: Protokoll Weekly 10. Juli 2024
+subtitle: Hier das Protokoll asu dem Weekly vom 10. Juli 2024
+---
+
 # Protokoll Weekly 10. Juli 2024
 
 ## 2026-Deployment
